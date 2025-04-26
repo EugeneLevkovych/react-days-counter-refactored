@@ -9,11 +9,11 @@ export default function Counter({ count, setCount, step, setStep}) {
 
   return (
     <div>
-      <div>
+      <div className="counter-box">
         <button className="btn" onClick={() => setCount((c) => c - step)}>
           -
         </button>
-        <input type="text" value={count} onChange={(e) => setCount(Number(e.target.value))} />
+        <input className="counter-input" type="text" value={count} onChange={(e) => setCount(Number(e.target.value))} />
         <button className="btn" onClick={() => setCount((c) => c + step)}>
           +
         </button>
